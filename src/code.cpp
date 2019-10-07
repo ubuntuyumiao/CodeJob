@@ -16,8 +16,21 @@ int main (int argc, char *argv[]) {
     a[2]=a[3]=3;
     a[4]=7;
     cout << sln.singleNumber(a,5) << endl; */
+/*     ListNode head(9),node1(5),node2(3),node3(7),node4(0);
+    head.next = &node1;
+    node1.next = &node2;
+    node2.next = &node3;
+    node3.next = &node4;
+   ListNode * head1 = sln.insertionSortList(&head);
+   while (head1!=nullptr)
+   {
+       cout << head1->val <<" ";
+       head1 = head1->next ;
+   } */
+   
+    int a[10]={2,5,7,1,8,2,5,10,4,6};
+    sln.quick_sort(a,0,9);
+    for(int i=0;i<10;i++) cout<<a[i]<<" ";
 
-    vector<string> test = {"wuxu","xianli","qianqian","yumiao"};
-    cout << sln.evalRPN(test);
     return 0;
 }
